@@ -1,28 +1,27 @@
+class InvalidOperatorException extends Exception{
+    public InvalidOperatorException(String str){
+        super(str);
+
+    }
+}
+
+
 public class Calculator {
     
     private double num1;
     private double num2;
-    private double num3;
+    private double result;
 
-    public Calcuator(){
+    public Calculator(){
         num1 = 0;
         num2 = 0;
         result = 0;
 
     }
     
-    public class Calculator {
     
-        private double num1;
-        private double num2;
-        private double result;
     
-        public Calculator(){
-            num1 = 0;
-            num2 = 0;
-            result = 0;
-        }
-    
+        
         public double doCalculation(String op, double num1, double num2) throws InvalidOperatorException, ArithmeticException{
             this.num1 = num1;
             this.num2 = num2;

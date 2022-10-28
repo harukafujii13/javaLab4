@@ -1,4 +1,4 @@
-import java.net.SocketTimeoutException;
+
 import java.util.Scanner;
 
 public class App {
@@ -7,8 +7,9 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         String exit = "";
 
-        while(!exit.toLowerCase().equals("quit")){
-
+    while(!exit.toLowerCase().equals("quit")){
+            
+        try{
             System.out.println("Please type the first number");
             double n1 = scanner.nextDouble();
             System.out.println("Choose an operation:\n"
